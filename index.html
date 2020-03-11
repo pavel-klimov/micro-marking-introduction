@@ -28,6 +28,20 @@
     </header>
 
     <section class="slide clear">
+        <!--h2>Введение в микроразметку Schema.org</h2-->
+        <h2>Disclaimer:</h2>
+        <p>
+            Материал сырой и не доработанный, это самый первый мой прогон
+            самого первого моего выступления. Надеюсь на прощение и понимание.
+        </p>
+        <!--p>
+            Даже хорошая семантическая верстка сайта не передаст поисковикам
+            смысловое значение контента страницы. Я расскажу о том, как помочь роботам
+            лучше понимать ваш сайт с помощью форматов семантической разметки данных
+        </p-->
+    </section>
+
+    <section class="slide clear">
         <div class="columns two" style="height: 100%;">
             <div>
                 <h2>Павел Климов</h2>
@@ -39,20 +53,36 @@
     </section>
 
     <section class="slide clear">
-        <h2>Введение в микроразметку Schema.org</h2>
+        <h2>Слайд с появняющими картинками</h2>
+        <p>Здесь нечно что показывает мою боль с традания</p>
+        <p class="next">А может быть любовь и надежду</p>
+        <p class="next">А может быть всё и сразу</p>
+    </section>
+
+    <section class="slide">
+        <h2>Schema.org</h2>
         <p>
-            Даже хорошая семантическая верстка сайта не передаст поисковикам
-            смысловое значение контента страницы. Я расскажу о том, как помочь роботам
-            лучше понимать ваш сайт с помощью форматов семантической разметки данных
+            Это стандарт семантической разметки данных в сети,
+            созданный поисковыми системами Google, Bing, Yahoo! и Яндекс.
         </p>
     </section>
 
     <section class="slide">
-        <h2>Что такое Schema.org?</h2>
-        <p>
-            Schema.org — это стандарт семантической разметки данных в сети,
-            созданный поисковыми системами Google, Bing, Yahoo! и Яндекс.
-        </p>
+        <h2>Скелетон сайта</h2>
+        <p>(Возможно здесь будет пошаговая анимация, а возможно её не будет)</p>
+    </section>
+
+    <section class="slide">
+        <h2>Картинка</h2>
+        <p>Не понятно</p>
+    </section>
+
+    <section class="slide">
+        <h2>Материал</h2>
+        <p>Серия скриншотов сайтов с разными называемыми блоками:</p>
+        <p class="next">Заголовок, подзаголовок и описание</p>
+        <p class="next">Автор, дата публикации</p>
+        <p class="next">Ключевые слова</p>
     </section>
 
     <section class="slide clear">
@@ -100,6 +130,72 @@
         </pre>
     </section>
 
+    <section class="slide">
+        <h2>Дата публикации</h2>
+        <p>Скриншот части материала с датой публикации</p>
+        <p class="next">Появляется снипет html кода с тегом time и атрибутами</p>
+    </section>
+
+    <section class="slide clear">
+        <h2 class="visually-hidden">Семантика</h2>
+        <pre>
+            <code>&lt;main class="article"&gt;</code>
+            <code>  &lt;header class="article__header"&gt;</code>
+            <code>    &lt;h1 class="article__title"&gt;...&lt;/h1&gt;</code>
+            <code>    &lt;p class="article__subtitle"&gt;...&lt;/p&gt;</code>
+            <code>  &lt;/header&gt;</code>
+            <code>  &lt;div class="article__description"&gt;...&lt;/div&gt;</code>
+            <code>  &lt;div class="article__body"&gt;...&lt;/div&gt;</code>
+            <code>  &lt;div class="article__meta"&gt;...&lt;/div&gt;</code>
+            <code>&lt;/main&gt;</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Картинка</h2>
+        <p>Видимо, серия картинок или скриншотов,</p>
+        <p class="next"> которые должны показывать серьёзность моих слов</p>
+    </section>
+
+    <section class="slide">
+        <h2>Форматы разметки</h2>
+    </section>
+
+    <section class="slide">
+        <h2>RDFa</h2>
+        <p>Снипет с примером разметки</p>
+    </section>
+
+    <section class="slide">
+        <h2>JSON-LD</h2>
+        <p>Снипет с примером разметки</p>
+    </section>
+
+    <section class="slide">
+        <h2>Microdata</h2>
+        <p>Снипет с примером разметки</p>
+    </section>
+
+    <section class="slide">
+        <h2>Скрин Schema.org</h2>
+        <p>Снипет с примером разметки</p>
+    </section>
+
+    <section class="slide clear">
+        <h2 class="visually-hidden">Семантика</h2>
+        <pre>
+            <code>&lt;main class="article"&gt;</code>
+            <code>  &lt;header class="article__header"&gt;</code>
+            <code>    &lt;h1 class="article__title"&gt;...&lt;/h1&gt;</code>
+            <code>    &lt;p class="article__subtitle"&gt;...&lt;/p&gt;</code>
+            <code>  &lt;/header&gt;</code>
+            <code>  &lt;div class="article__description"&gt;...&lt;/div&gt;</code>
+            <code>  &lt;div class="article__body"&gt;...&lt;/div&gt;</code>
+            <code>  &lt;div class="article__meta"&gt;...&lt;/div&gt;</code>
+            <code>&lt;/main&gt;</code>
+        </pre>
+    </section>
+
     <section class="slide clear">
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
@@ -126,19 +222,10 @@
         </pre>
     </section>
 
-    <section class="slide clear">
-        <h2 class="visually-hidden">Семантика</h2>
-        <pre>
-            <code>&lt;main class="article" role="main" itemscope itemtype="https://schema.org/Article"&gt;</code>
-            <code>  &lt;header class="article__header"&gt;</code>
-            <code>    &lt;h1 class="article__title" itemprop="headline"&gt;...&lt;/h1&gt;</code>
-            <code>    &lt;p class="article__subtitle"&gt;...&lt;/p&gt;</code>
-            <code>  &lt;/header&gt;</code>
-            <code>  &lt;div class="article__description" itemprop="description"&gt;...&lt;/div&gt;</code>
-            <code>  &lt;div class="article__body" itemprop="articleBody"&gt;...&lt;/div&gt;</code>
-            <code>  &lt;div class="article__meta"&gt;...&lt;/div&gt;</code>
-            <code>&lt;/main&gt;</code>
-        </pre>
+    <section class="slide">
+        <h2>Снипет для даты</h2>
+        <p>Дата публикамия +  последнее изменение, показываю meta тег</p>
+        <p>Следующий пример с url для картинки или паблишева</p>
     </section>
 
     <section class="slide clear">
@@ -154,6 +241,66 @@
             <code>  &lt;div class="article__meta"&gt;...&lt;/div&gt;</code>
             <code>&lt;/main&gt;</code>
         </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Дополнительно</h2>
+        <p>В материале можно отдельно разметить:</p>
+        <p>Фотографии, видео, интервью, рецепт, вопрос ответ и многое другое</p>
+    </section>
+
+    <section class="slide">
+        <h2>Поддерживаемые форматы:</h2>
+        <p>Яндекс:</p>
+        <p>
+            Статьи, новости, блоги, книги, рефераты, фотографии, видео, фильмы, песни,
+            альбомы, приложения, интервью, рецепты, товары, вопрос ответ, адреса, организации</p>
+    </section>
+
+    <section class="slide">
+        <h2>Поддерживаемые форматы:</h2>
+        <p>Google:</p>
+        <p>
+            Статьи, новости, блоги, книги, рефераты, фотографии, видео, фильмы, песни,
+            альбомы, приложения, интервью, рецепты, товары, вопрос ответ, адреса, организации,
+            <mark>строка навигации, поиск по сайту, отзыв</mark>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Поисковая выдача</h2>
+        <p>Скриншоты с примерами улучшенной поисковой выдачи</p>
+    </section>
+
+    <section class="slide">
+        <h2>Для проверки</h2>
+        <p>Google: https://search.google.com/structured-data/testing-tool/u/0/</p>
+        <p>Yandex: https://webmaster.yandex.ru/tools/microtest/</p>
+    </section>
+
+    <section class="slide">
+        <h2>Плюсы минусы</h2>
+        <h3>Минусы</h3>
+        <ul>
+            <li class="next">Дублирование данных и увеличение размера документа.</li>
+            <li class="next">В случае злоупотребления возможны поисковые интервенции.</li>
+            <li class="next">Пользователь может получить все данные со страницы поиска.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Плюсы минусы</h2>
+        <h3>Плюсы</h3>
+        <ul>
+            <li class="next">Улучшение индексации и интерпретации данных на страницах сайта.</li>
+            <li class="next">Красивое представление в поисковой выдачи.</li>
+            <li class="next">Пользователь может получить все данные со страницы поиска.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Спасибо за внимание</h2>
+        <h3>Вопросы?</h3>
     </section>
 
     <!--
