@@ -192,21 +192,55 @@
 
     <section class="slide">
         <h2>Форматы разметки</h2>
+        <p>Расмотрим форматы разметки на примере разметки анонса статьи <a href="https://schema.org/Article#InteractionCounter-gen-31">с сайта schema.org</a></p>
+        <div class="place bottom" style="padding: 0 0 50px; background-color: #ffffff;">
+            <pre>
+                <code>How to Tie a Reef Knot</code>
+                <code>by John Doe</code>
+                <code>This article has been tweeted 1203 times and</code>
+                <code>contains 78 user comments.</code>
+            </pre>
+        </div>
     </section>
 
     <section class="slide">
         <h2>RDFa</h2>
-        <p>Снипет с примером разметки</p>
+        <pre>
+            <code>&lt;div vocab="http://schema.org/" typeof="Article"&gt;</code>
+            <code>  &lt;span property="name"&gt;How to Tie a Reef Knot&lt;/span&gt;</code>
+            <code>  by &lt;span property="author"&gt;John Doe&lt;/span&gt;</code>
+            <code>  This article has been tweeted 1203 times and</code>
+            <code>  78 user comments.</code>
+            <code>  ... </code>
+            <code>&lt;/div&gt;</code>
+        </pre>
     </section>
 
     <section class="slide">
         <h2>JSON-LD</h2>
-        <p>Снипет с примером разметки</p>
+        <pre>
+            <code>&lt;script type="application/ld+json"&gt;</code>
+            <code>  {</code>
+            <code>    "@context": "http://schema.org",</code>
+            <code>    "@type": "Article",</code>
+            <code>    "author": "John Doe",</code>
+            <code>    "name": "How to Tie a Reef Knot" </code>
+            <code>  }</code>
+            <code>&lt;/script&gt;</code>
+        </pre>
     </section>
 
     <section class="slide">
         <h2>Microdata</h2>
-        <p>Снипет с примером разметки</p>
+        <pre>
+          <code>&lt;div itemscope itemtype="http://schema.org/Article"&gt;</code>
+          <code>  &lt;span itemprop="name"&gt;How to Tie a Reef Knot&lt;/span&gt;</code>
+          <code>  by &lt;span itemprop="author"&gt;John Doe&lt;/span&gt;</code>
+          <code>  This article has been tweeted 1203 times and</code>
+          <code>  contains 78 user comments.</code>
+          <code>  ...</code>
+          <code>&lt;/div&gt;</code>
+        </pre>
     </section>
 
     <section class="slide">
@@ -248,8 +282,8 @@
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
             <code>&lt;main class="article"</code>
-            <code>      <mark>itemscope</mark></code>
-            <code>      <mark>itemtype="https://schema.org/Article"</mark>&gt;</code>
+            <code>    <mark>itemscope</mark></code>
+            <code>    <mark>itemtype="https://schema.org/Article"</mark>&gt;</code>
             <code>  ...</code>
             <code>&lt;/main&gt;</code>
         </pre>
