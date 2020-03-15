@@ -27,7 +27,7 @@
         </p>
     </header>
 
-    <section class="slide clear">
+    <section class="slide">
         <!--h2>Введение в микроразметку Schema.org</h2-->
         <h2>Disclaimer:</h2>
         <p>
@@ -41,7 +41,7 @@
         </p-->
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
         <div class="columns two" style="height: 100%;">
             <div>
                 <h2>Павел Климов</h2>
@@ -52,11 +52,38 @@
         </div>
     </section>
 
-    <section class="slide clear">
-        <h2>Слайд с появняющими картинками</h2>
-        <p>Здесь нечно что показывает мою боль с традания</p>
-        <p class="next">А может быть любовь и надежду</p>
-        <p class="next">А может быть всё и сразу</p>
+    <section class="slide">
+        <style>
+            .work {
+                position: relative;
+            }
+            .work__emoji {
+                display: block;
+                position: absolute;
+                top: -8px;
+                right: 0;
+                width: 64px;
+                height: 64px;
+            }
+            .work__emoji_big {
+                right: -32px;
+                width: 128px;
+                height: 128px;
+            }
+        </style>
+        <h2>Моя любимая работа</h2>
+        <p class="work">
+            Здесь нечно, что показывает мою боль и страдания
+            <img class="work__emoji" src="pictures/emoji_hate.jpg" alt="Матерящийся смайл" wigth="32" height="32">
+        </p>
+        <p class="work next">
+            А может быть любовь и надежду
+            <img class="work__emoji" src="pictures/emoji_love.jpg" alt="Смайл с сердечками" wigth="32" height="32">
+        </p>
+        <p class="work next">
+            А может быть всё и сразу
+            <img class="work__emoji work__emoji_big" src="pictures/emoji_nirvana.jpg" alt="Смайл в нирване" wigth="32" height="32">
+        </p>
     </section>
 
     <section class="slide">
@@ -73,8 +100,8 @@
     </section>
 
     <section class="slide">
-        <h2>Картинка</h2>
-        <p>Не понятно</p>
+        <h2 class="visually-hidden">Не понятно</h2>
+        <img class="cover" src="pictures/garold.jpg" alt="Андраш Арато">
     </section>
 
     <section class="slide">
@@ -85,7 +112,7 @@
         <p class="next">Ключевые слова</p>
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
             <code>&lt;div class="article"&gt;</code>
@@ -100,7 +127,7 @@
         </pre>
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
             <code class="mark">&lt;main class="article"&gt;</code>
@@ -115,7 +142,7 @@
         </pre>
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
             <code>&lt;main class="article"&gt;</code>
@@ -131,12 +158,18 @@
     </section>
 
     <section class="slide">
-        <h2>Дата публикации</h2>
-        <p>Скриншот части материала с датой публикации</p>
-        <p class="next">Появляется снипет html кода с тегом time и атрибутами</p>
+        <h2 style="padding: 0 0 30px; background-color: #ffffff;">Дата публикации</h2>
+        <img class="cover" src="pictures/datetime.jpg" alt="Дапа публикации в материале">
+        <div class="next place bottom" style="padding: 50px 0; background-color: #ffffff;">
+            <pre>
+                <code>&lt;span class="article__pubdate"&gt;</code>
+                <code class="mark">  &lt;time datetime="2020-03-24T20:07:06+0300" pubdate&gt;</code>
+                <code>  сегодня в 20:07&lt;/time&gt;, просмотров: 139&lt;/span&gt;</code>
+            </pre>
+        </div>
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
             <code>&lt;main class="article"&gt;</code>
@@ -181,7 +214,7 @@
         <p>Снипет с примером разметки</p>
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
             <code>&lt;main class="article"&gt;</code>
@@ -196,7 +229,7 @@
         </pre>
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
             <code>&lt;main class <mark>itemscope itemtype="https://schema.org/Article"</mark>&gt;</code>
@@ -211,7 +244,7 @@
         </pre>
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
             <code>&lt;main class="article"</code>
@@ -228,7 +261,7 @@
         <p>Следующий пример с url для картинки или паблишева</p>
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
         <h2 class="visually-hidden">Семантика</h2>
         <pre>
             <code>&lt;main class="article" role="main" itemscope itemtype="https://schema.org/Article"&gt;</code>
